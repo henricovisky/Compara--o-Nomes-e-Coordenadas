@@ -30,7 +30,7 @@ def load_data(file_path):
     return df.dropna(subset=['Latitude', 'Longitude'])
 
 # Função de comparação fuzzy + proximidade
-def match_auvo_to_received(auvo_df, received_df, lat_threshold=0.2, lon_threshold=0.2, similarity_threshold=75):
+def match_auvo_to_received(auvo_df, received_df, lat_threshold=0.2, lon_threshold=0.2, similarity_threshold=80):
     results = []
 
     for idx, row in auvo_df.iterrows():
